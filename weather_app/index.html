@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="weather application">
+        <meta name="weather" content="weather,snow,rain,clouds,humidity,wind">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>weather App</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="manifest" href="weather.webmanifest">
+
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <h1>Weather App</h1>
+                    <form action="">
+                        <label for="enter city">Enter city</label>
+                        <div class="weather-search">
+                            <input placeholder="SEARCH" type="text" id="search">
+                            <button id="btn">SEARCH</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="card-body">
+                    <div class="temp">
+                        <h1 id="temp"></h1>
+                        <h2 id="desc"></h2>
+                    </div>
+                    <div class="wind-humidity">
+                        <div class="wind">
+                            <h3>WIND</h3>
+                            <h3 id="wind"></h3>
+                        </div>
+                        <div class="humidity">
+                            <h3>HUMIDITY</h3>
+                            <h3 id="humidity"></h3>
+                        </div>
+                    </div>
+                    <div class="place">
+                        <h3 id="place"></h3>
+                    </div>
+                </div>
+                <div class="card-img">
+                    <img src="./images/clouds.png" id="weather-icon" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+        <script src="index.js"></script>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/7.19.1/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="/__/firebase/7.19.1/firebase-analytics.js"></script>
+
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js"></script>
+    </body>
+
+</html>
